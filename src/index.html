@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Example</title>
 
-    <link href="styles.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -111,9 +111,9 @@
       var menulinks = document.querySelectorAll(".menulink");
       for (var i = 0; i < menulinks.length; i++) {
         menulinks[i].addEventListener("click", function(event) {
-          event.preventDefault;
+          event.preventDefault();
 
-          var thisMenu = this.parentNode.querySelectorAll("ul");
+          var thisMenu = this.parentNode.querySelector("ul");
           alert(thisMenu.innerHTML);
         });
       }

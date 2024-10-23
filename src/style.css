@@ -1,4 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
   background-color: #efefef;
   font-family: Arial;
@@ -25,7 +26,7 @@ article {
 
 h1 {
   height: 150px;
-  background: url("http://placekitten.com/525/150") no-repeat;
+  background: url("https://placekitten.com/525/150") no-repeat;
   line-height: 150px;
   text-align: center;
   color: #fff;
