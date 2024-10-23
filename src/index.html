@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Example</title>
-
-    <link href="style.css" rel="stylesheet" />
+    <script src="./src/app.js" defer></script>
+    <link href="src/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <main>
+      <div id="image">
+        <img
+          id="cat"
+          src="https://www.shutterstock.com/image-photo/cat-lies-sleeps-on-paid-bills-2264475427"
+          alt="cat"
+          no-repeat
+        />
+      </div>
       <article>
         <h1>Meow!</h1>
         <p>
@@ -101,22 +109,5 @@
         </nav>
       </aside>
     </main>
-
-    <script>
-      var submenus = document.querySelectorAll("ul li ul");
-
-      for (var i = 0; i < submenus.length; i++) {
-        submenus[i].className = "hide-menu";
-      }
-      var menulinks = document.querySelectorAll(".menulink");
-      for (var i = 0; i < menulinks.length; i++) {
-        menulinks[i].addEventListener("click", function(event) {
-          event.preventDefault();
-
-          var thisMenu = this.parentNode.querySelector("ul");
-          alert(thisMenu.innerHTML);
-        });
-      }
-    </script>
   </body>
 </html>

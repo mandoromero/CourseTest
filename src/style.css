@@ -1,5 +1,3 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-
 body {
   background-color: #efefef;
   font-family: Arial;
@@ -16,20 +14,26 @@ main {
   flex-direction: row-reverse;
 }
 
+#image {
+  width: 800px;
+}
+
+#cat {
+  height: 100px;
+  width: 300px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 aside {
   width: 250px;
 }
 
 article {
   width: 525px;
-}
-
-h1 {
-  height: 150px;
-  background: url("https://placekitten.com/525/150") no-repeat;
-  line-height: 150px;
-  text-align: center;
-  color: #fff;
 }
 
 ul {
